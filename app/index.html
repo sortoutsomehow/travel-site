@@ -12,20 +12,36 @@
 
 <body>
 
-  <header>
-    <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#" class="btn">Get in Touch</a>
-    <nav>
-      <ul>
-        <li><a href="#our-beginning">Our Beginning</a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="wrapper">
+      <div class="site-header__logo">
+        <img src="assets/images/icons/clear-view-escapes.svg">
+      </div>
+
+
+      <div class="site-header__menu-icon">
+        <div class="site-header__menu-icon__middle"></div>
+      </div>
+      
+      <div class="site-header__menu-content">
+        <div class="site-header__btn-container">
+          <a href="#" class="btn">Get in Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#our-beginning">Our Beginning</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
   </header>
   <div class="large-hero">
 
-    <picture>
+    <picture class="large-hero__image">
       <source srcset="./assets/images/hero--large.jpg 1920w, ./assets/images/hero--large-hi-dpi.jpg 3840w"
         media="(min-width:1380px)">
       <source srcset="./assets/images/hero--medium.jpg 1380w, ./assets/images/hero--medium-hi-dpi 2760w"
@@ -33,7 +49,7 @@
       <source srcset="./assets/images/hero--small.jpg 990w, ./assets/images/hero--small-hi-dpi.jpg 1980w"
         media="(min-width:650px)">
       <img srcset="./assets/images/hero--smaller.jpg 640w, ./assets/images/hero--smaller-hi-dpi.jpg 1280w"
-        alt="Coastal view of ocean and mountains" class="large-hero__image">
+        alt="Coastal view of ocean and mountains" >
     </picture>
     <div class="large-hero__text-content">
       <div class="wrapper">
@@ -231,7 +247,8 @@
 
   <footer class="site-footer">
     <div class="wrapper">
-      <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved. </span> <a href="#" class="btn btn--orange">Get in
+      <p><span class="site-footer__text">Copyright &copy; 2019 Clear View Escapes. All rights reserved. </span> <a
+          href="#" class="btn btn--orange">Get in
           Touch</a></p>
     </div>
 
